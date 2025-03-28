@@ -188,7 +188,25 @@ WORKDIR /app
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "ADLDSManagementPortal.dll"]
 ```
+If you're running both the Windows Server (as a VM) and the .NET application on the same host, Docker is not necessary. In this local development and testing scenario, you can directly deploy the ASP.NET Core application using:
 
+IIS (Internet Information Services)
+Kestrel (ASP.NET Core's built-in web server)
+
+Benefits of Local Deployment without Docker:
+
+Simpler setup
+Direct communication between application and AD LDS
+Lower overhead
+Easier debugging
+No containerization complexity
+
+Recommended Local Deployment Steps:
+
+Install IIS on Windows Server VM
+Install .NET Core Hosting Bundle
+Publish ASP.NET Core application directly to IIS
+Configure application bindings and connection strings to point to local AD LDS instance
 ## 🛡️ Security Recommendations
 1. Use LDAPS with SSL/TLS
 2. Implement strong password policies

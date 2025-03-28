@@ -2,7 +2,7 @@
 
 ## 📘 Project Overview
 This project implements a robust enterprise-level directory service using Active Directory Lightweight Directory Services (AD LDS) with a modern ASP.NET Core web application for management and external access.
-
+(We chose ASP.NET over WinForms and other Windows Desktop App GUI because it is easier to access taking in consideration that it is web-based and cross-platform.)
 ## 🎯 Project Objectives
 - Create a scalable lightweight directory service
 - Develop a secure web-based user management interface

@@ -217,14 +217,8 @@ ENTRYPOINT ["dotnet", "ADLDSManagementPortal.dll"]
 - [ ] Develop Advanced Reporting
 - [ ] Containerize Complete Solution
 
-## 📞 Support
-For issues, contact:
-- Project Maintainer: [Your Name]
-- Email: support@yourcompany.com
 
-## 📜 Licensing
-[Insert Your Licensing Information]
 
----
+
 
 **Final Note**: This project provides a robust framework for AD LDS management. Customize and extend based on specific organizational requirements.
